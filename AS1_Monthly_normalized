@@ -1,0 +1,185 @@
+------WEEKLY BREAKDOWN------
+
+select u_word_3.keyword as keyword,
+             w1_count,
+             w2_count,
+             w3_count,
+             w4_count.week4_count as w4_count
+from(select u_word_2.keyword as keyword,
+             w1_count,
+             w2_count,
+             w3_count.week3_count as w3_count
+        from (select u_word_1.keyword as keyword,
+                     u_word_1.week1_count as w1_count,
+                     w2_count.week2_count as w2_count
+                from (select u_word.keyword as keyword, w1_count.week1_count
+                         from(select distinct o.keyword
+                            from bridgeapp.alert_keywords as ak
+                            left join bridgeapp.alert_info as ai on ak.alert_id = ai.alert_id
+                            left join bridgeapp.ontology as o on ak.keyword_id = o.keyword_id
+                            left join bridgeapp.data_table as ds on ai.hash = ds.hash
+                            where ds.published_date >= '2022-09-01' AND
+                                  ds.published_date < '2022-10-01'and
+                                  workflow_status >= 400 and
+                                  workflow_status < 499 and
+                                  ak.is_active is true) u_word
+                        left join (
+                            select w1.keyword, workflow_count / (select cast(count(distinct ai.title) as float(2))
+                                                                 from bridgeapp.alert_keywords as ak
+                                                                 left join bridgeapp.alert_info as ai on ak.alert_id = ai.alert_id
+                                                                 left join bridgeapp.ontology as o on ak.keyword_id = o.keyword_id
+                                                                 left join bridgeapp.data_table as ds on ai.hash = ds.hash
+                                                                 where ds.published_date >= '2022-09-01' AND
+                                                                     ds.published_date < '2022-10-01'and
+                                                                     workflow_status >= 400 and
+                                                                     workflow_status < 499 and
+                                                                     ak.is_active is true and
+                                                                     date_part('week', ds.published_date::date)-34 = 1
+                                                                 ) as week1_count
+                            from(select
+                                    date_part('week', ds.published_date::date)-34 as week,
+                                    o.keyword,
+                                    cast(count(ai.workflow_status) as float(2)) as workflow_count
+                                    from bridgeapp.alert_keywords as ak
+                                    left join bridgeapp.alert_info as ai on ak.alert_id = ai.alert_id
+                                    left join bridgeapp.ontology as o on ak.keyword_id = o.keyword_id
+                                    left join bridgeapp.data_table as ds on ai.hash = ds.hash
+                                    where ds.published_date >= '2022-09-01' AND
+                                          ds.published_date < '2022-10-01'and
+                                          workflow_status >= 400 and
+                                          workflow_status < 499 and
+                                          ak.is_active is true
+                                    group by week, o.keyword
+                                    order by week, o.keyword) w1
+                            where w1.week = 1
+                         ) w1_count
+
+                        on u_word.keyword = w1_count.keyword
+
+
+                     ) u_word_1
+                left join (
+                    select w1.keyword, workflow_count/(select cast(count(distinct ai.title) as float(2))
+                                                                 from bridgeapp.alert_keywords as ak
+                                                                 left join bridgeapp.alert_info as ai on ak.alert_id = ai.alert_id
+                                                                 left join bridgeapp.ontology as o on ak.keyword_id = o.keyword_id
+                                                                 left join bridgeapp.data_table as ds on ai.hash = ds.hash
+                                                                 where ds.published_date >= '2022-09-01' AND
+                                                                     ds.published_date < '2022-10-01'and
+                                                                     workflow_status >= 400 and
+                                                                     workflow_status < 499 and
+                                                                     ak.is_active is true and
+                                                                     date_part('week', ds.published_date::date)-34 = 2
+                                                                 ) as week2_count
+                            from(select
+                                    date_part('week', ds.published_date::date)-34 as week,
+                                    o.keyword,
+                                    count(ai.workflow_status) as workflow_count
+                                    from bridgeapp.alert_keywords as ak
+                                    left join bridgeapp.alert_info as ai on ak.alert_id = ai.alert_id
+                                    left join bridgeapp.ontology as o on ak.keyword_id = o.keyword_id
+                                    left join bridgeapp.data_table as ds on ai.hash = ds.hash
+                                    where ds.published_date >= '2022-09-01' AND
+                                          ds.published_date < '2022-10-01'and
+                                          workflow_status >= 400 and
+                                          workflow_status < 499 and
+                                          ak.is_active is true
+                                    group by week, o.keyword
+                                    order by week, o.keyword) w1
+                            where w1.week = 2
+                         ) w2_count
+
+                on u_word_1.keyword = w2_count.keyword
+
+
+             ) u_word_2
+        left join (select w3.keyword, workflow_count/(select cast(count(distinct ai.title) as float(2))
+                                                                 from bridgeapp.alert_keywords as ak
+                                                                 left join bridgeapp.alert_info as ai on ak.alert_id = ai.alert_id
+                                                                 left join bridgeapp.ontology as o on ak.keyword_id = o.keyword_id
+                                                                 left join bridgeapp.data_table as ds on ai.hash = ds.hash
+                                                                 where ds.published_date >= '2022-09-01' AND
+                                                                     ds.published_date < '2022-10-01'and
+                                                                     workflow_status >= 400 and
+                                                                     workflow_status < 499 and
+                                                                     ak.is_active is true and
+                                                                     date_part('week', ds.published_date::date)-34 = 3
+                                                                 ) as week3_count
+                            from(select
+                                    date_part('week', ds.published_date::date)-34 as week,
+                                    o.keyword,
+                                    count(ai.workflow_status) as workflow_count
+                                    from bridgeapp.alert_keywords as ak
+                                    left join bridgeapp.alert_info as ai on ak.alert_id = ai.alert_id
+                                    left join bridgeapp.ontology as o on ak.keyword_id = o.keyword_id
+                                    left join bridgeapp.data_table as ds on ai.hash = ds.hash
+                                    where ds.published_date >= '2022-09-01' AND
+                                          ds.published_date < '2022-10-01'and
+                                          workflow_status >= 400 and
+                                          workflow_status < 499 and
+                                          ak.is_active is true
+                                    group by week, o.keyword
+                                    order by week, o.keyword) w3
+                            where w3.week = 3
+                         ) w3_count
+
+        on u_word_2.keyword = w3_count.keyword
+    ) u_word_3
+
+left join (select w4.keyword, workflow_count/(select cast(count(distinct ai.title) as float(2))
+                                                                 from bridgeapp.alert_keywords as ak
+                                                                 left join bridgeapp.alert_info as ai on ak.alert_id = ai.alert_id
+                                                                 left join bridgeapp.ontology as o on ak.keyword_id = o.keyword_id
+                                                                 left join bridgeapp.data_table as ds on ai.hash = ds.hash
+                                                                 where ds.published_date >= '2022-09-01' AND
+                                                                     ds.published_date < '2022-10-01'and
+                                                                     workflow_status >= 400 and
+                                                                     workflow_status < 499 and
+                                                                     ak.is_active is true and
+                                                                     date_part('week', ds.published_date::date)-34 = 4
+                                                                 ) as week4_count
+                            from(select
+                                    date_part('week', ds.published_date::date)-34 as week,
+                                    o.keyword,
+                                    count(ai.workflow_status) as workflow_count
+                                    from bridgeapp.alert_keywords as ak
+                                    left join bridgeapp.alert_info as ai on ak.alert_id = ai.alert_id
+                                    left join bridgeapp.ontology as o on ak.keyword_id = o.keyword_id
+                                    left join bridgeapp.data_table as ds on ai.hash = ds.hash
+                                    where ds.published_date >= '2022-09-01' AND
+                                          ds.published_date < '2022-10-01'and
+                                          workflow_status >= 400 and
+                                          workflow_status < 499 and
+                                          ak.is_active is true
+                                    group by week, o.keyword
+                                    order by week, o.keyword) w4
+                            where w4.week = 4
+                         ) w4_count
+
+on u_word_3.keyword = w4_count.keyword
+
+
+----------------------------------------------------------------
+------TOP FIVE FOR MONTH------
+select o.keyword, cast(count(distinct ai.title) as float(2))/(select(cast(count(distinct ai.title) as float(2)))
+    from bridgeapp.alert_keywords as ak
+    left join bridgeapp.alert_info as ai on ak.alert_id = ai.alert_id
+    left join bridgeapp.ontology as o on ak.keyword_id = o.keyword_id
+    left join bridgeapp.data_table as ds on ai.hash = ds.hash
+    where ds.published_date >= '2022-09-01' AND
+        ds.published_date < '2022-10-01'and
+        workflow_status >= 400 and
+        workflow_status < 499 and
+        ak.is_active is true) as total_pct
+from bridgeapp.alert_keywords as ak
+left join bridgeapp.alert_info as ai on ak.alert_id = ai.alert_id
+left join bridgeapp.ontology as o on ak.keyword_id = o.keyword_id
+left join bridgeapp.data_table as ds on ai.hash = ds.hash
+where ds.published_date >= '2022-09-01' AND
+    ds.published_date < '2022-10-01'and
+    workflow_status >= 400 and
+    workflow_status < 499 and
+    ak.is_active is true
+group by keyword
+order by total_pct DESC
+limit 5;
