@@ -1,45 +1,17 @@
 AddSheet ( "0" ) ;
-No message returned from server
-
 SetSheetState ( { "sheetId" : "0" , "sheetLabel" : "Sheet1" , "backgroundColor" : null , "hideHeaders" : null , "hideBorders" : null , "height" : null , "width" : null , "borderSize" : 2 } ) ;
-No message returned from server
-
 AddPanel ( panel = [ "1" ] , sheet = [ "0" ] ) ;
-No message returned from server
-
 SetPanelState ( "<encode>{"panelId":"1","panelLabel":"Keyword Percentage","sheetId":"0","view":"visualization","viewOptions":null,"numCollect":2000,"viewOptionsMap":{},"config":{"backgroundColor":"","panelstatus":"normalized","componentName":"panel","type":"golden","opacity":100.0},"ornaments":{"tools":{"shared":{"editXAxis":{"rotate":0.0,"showAllXValues":false,"min":{"show":false},"max":{"show":false},"line":true,"values":true,"format":{"delimiter":"Default","wordWrap":false,"prepend":"","type":"Default","append":"","maxLength":10.0},"nameGap":25.0,"centerTitle":false,"fontSize":12.0,"title":{"show":true,"name":"Month"}},"chartTitle":{"fontFamily":"Open Sans","enterCustomFont":false,"fontSize":18.0,"text":"Top Ten Ontology Terms as Percentage of Total Tags by Month","fontWeight":"normal","fontColor":"#000000"},"toggleStack":true,"editYAxis":{"rotate":0.0,"min":{"show":false},"max":{"show":false},"line":true,"values":true,"format":{"delimiter":"Default","wordWrap":false,"prepend":"","type":"Default","append":"","maxLength":10.0},"nameGap":25.0,"title":{"show":true,"name":"Percentage"}},"formatDataValues":{"formats":[{"date":"Default","dimensionType":"DOUBLE","prepend":"","defaultOption":"","type":"Default","showDefaultOptions":false,"layout":"Area","round":2.0,"delimiter":"Default","appliedString":"( '0.00'  )","model":"value","dimension":"Carbon_Dioxide","append":""},{"date":"Default","dimensionType":"DOUBLE","prepend":"","defaultOption":"","type":"Default","showDefaultOptions":false,"layout":"Area","round":2.0,"delimiter":"Default","appliedString":"( '0.00'  )","model":"value","dimension":"Climate","append":""},{"date":"Default","dimensionType":"DOUBLE","prepend":"","defaultOption":"","type":"Default","showDefaultOptions":false,"layout":"Area","round":2.0,"delimiter":"Default","appliedString":"( '0.00'  )","model":"value","dimension":"Climate_Change","append":""},{"date":"Default","dimensionType":"DOUBLE","prepend":"","defaultOption":"","type":"Default","showDefaultOptions":false,"layout":"Area","round":2.0,"delimiter":"Default","appliedString":"( '0.00'  )","model":"value","dimension":"Decarbonization","append":""},{"date":"Default","dimensionType":"DOUBLE","prepend":"","defaultOption":"","type":"Default","showDefaultOptions":false,"layout":"Area","round":2.0,"delimiter":"Default","appliedString":"( '0.00'  )","model":"value","dimension":"Electric_Vehicles","append":""},{"date":"Default","dimensionType":"DOUBLE","prepend":"","defaultOption":"","type":"Default","showDefaultOptions":false,"layout":"Area","round":2.0,"delimiter":"Default","appliedString":"( '0.00'  )","model":"value","dimension":"Green","append":""},{"date":"Default","dimensionType":"DOUBLE","prepend":"","defaultOption":"","type":"Default","showDefaultOptions":false,"layout":"Area","round":2.0,"delimiter":"Default","appliedString":"( '0.00'  )","model":"value","dimension":"Net_Zero","append":""},{"date":"Default","dimensionType":"DOUBLE","prepend":"","defaultOption":"","type":"Default","showDefaultOptions":false,"layout":"Area","round":2.0,"delimiter":"Default","appliedString":"( '0.00'  )","model":"value","dimension":"Solar_Energy","append":""},{"date":"Default","dimensionType":"DOUBLE","prepend":"","defaultOption":"","type":"Default","showDefaultOptions":false,"layout":"Area","round":2.0,"delimiter":"Default","appliedString":"( '0.00'  )","model":"value","dimension":"Sustainable","append":""}]}}}},"events":{},"comments":{},"filters":[],"order":[{"type":"CUSTOM","content":{"columnToSort":{"type":"COLUMN","content":{"table":"month","column":"PRIM_KEY_PLACEHOLDER","alias":"month","tableAlias":null}},"values":["May","June","July","August","September"]}}],"cbv":[],"lastQs":{"qsType":"FRAME","frameName":"keyword_final","frameType":"PY","isDistinct":true,"overrideImplicit":false,"limit":2000,"offset":0,"queryAll":false,"selectors":[{"type":"COLUMN","content":{"table":"month","column":"PRIM_KEY_PLACEHOLDER","alias":"month","tableAlias":null}},{"type":"COLUMN","content":{"table":"Carbon_Dioxide","column":"PRIM_KEY_PLACEHOLDER","alias":"Carbon_Dioxide","tableAlias":null}},{"type":"COLUMN","content":{"table":"Climate","column":"PRIM_KEY_PLACEHOLDER","alias":"Climate","tableAlias":null}},{"type":"COLUMN","content":{"table":"Climate_Change","column":"PRIM_KEY_PLACEHOLDER","alias":"Climate_Change","tableAlias":null}},{"type":"COLUMN","content":{"table":"Decarbonization","column":"PRIM_KEY_PLACEHOLDER","alias":"Decarbonization","tableAlias":null}},{"type":"COLUMN","content":{"table":"Electric_Vehicles","column":"PRIM_KEY_PLACEHOLDER","alias":"Electric_Vehicles","tableAlias":null}},{"type":"COLUMN","content":{"table":"Green","column":"PRIM_KEY_PLACEHOLDER","alias":"Green","tableAlias":null}},{"type":"COLUMN","content":{"table":"Net_Zero","column":"PRIM_KEY_PLACEHOLDER","alias":"Net_Zero","tableAlias":null}},{"type":"COLUMN","content":{"table":"Solar_Energy","column":"PRIM_KEY_PLACEHOLDER","alias":"Solar_Energy","tableAlias":null}},{"type":"COLUMN","content":{"table":"Sustainable","column":"PRIM_KEY_PLACEHOLDER","alias":"Sustainable","tableAlias":null}}],"withPanels":["1"]},"lastQueryStructMap":{"0":{"qsType":"FRAME","frameName":"keyword_final","frameType":"PY","isDistinct":true,"overrideImplicit":false,"limit":2000,"offset":0,"queryAll":false,"selectors":[{"type":"COLUMN","content":{"table":"month","column":"PRIM_KEY_PLACEHOLDER","alias":"month","tableAlias":null}},{"type":"COLUMN","content":{"table":"Carbon_Dioxide","column":"PRIM_KEY_PLACEHOLDER","alias":"Carbon_Dioxide","tableAlias":null}},{"type":"COLUMN","content":{"table":"Climate","column":"PRIM_KEY_PLACEHOLDER","alias":"Climate","tableAlias":null}},{"type":"COLUMN","content":{"table":"Climate_Change","column":"PRIM_KEY_PLACEHOLDER","alias":"Climate_Change","tableAlias":null}},{"type":"COLUMN","content":{"table":"Decarbonization","column":"PRIM_KEY_PLACEHOLDER","alias":"Decarbonization","tableAlias":null}},{"type":"COLUMN","content":{"table":"Electric_Vehicles","column":"PRIM_KEY_PLACEHOLDER","alias":"Electric_Vehicles","tableAlias":null}},{"type":"COLUMN","content":{"table":"Green","column":"PRIM_KEY_PLACEHOLDER","alias":"Green","tableAlias":null}},{"type":"COLUMN","content":{"table":"Net_Zero","column":"PRIM_KEY_PLACEHOLDER","alias":"Net_Zero","tableAlias":null}},{"type":"COLUMN","content":{"table":"Solar_Energy","column":"PRIM_KEY_PLACEHOLDER","alias":"Solar_Energy","tableAlias":null}},{"type":"COLUMN","content":{"table":"Sustainable","column":"PRIM_KEY_PLACEHOLDER","alias":"Sustainable","tableAlias":null}}],"withPanels":["1"]}},"lastTaskOptions":{"options":{"1":{"layout":"Area","alignment":{"tooltip":[],"label":["month"],"value":["Carbon_Dioxide","Climate","Climate_Change","Decarbonization","Electric_Vehicles","Green","Net_Zero","Solar_Energy","Sustainable"],"facet":[]},"layer":{"addYAxis":true,"addXAxis":true,"name":"Layer 0","z":2.0,"id":"0","base":true}}},"ornament":false},"lastTaskOptionsMap":{"0":{"options":{"1":{"layout":"Area","alignment":{"tooltip":[],"label":["month"],"value":["Carbon_Dioxide","Climate","Climate_Change","Decarbonization","Electric_Vehicles","Green","Net_Zero","Solar_Energy","Sustainable"],"facet":[]},"layer":{"addYAxis":true,"addXAxis":true,"name":"Layer 0","z":2.0,"id":"0","base":true}}},"ornament":false}},"lastFormatter":{"type":"TABLE","options":null},"lastFormatterMap":{"0":{"type":"TABLE","options":null}}}</encode>" ) ;
-No message returned from server
-
 AddPanel ( panel = [ "2" ] , sheet = [ "0" ] ) ;
-No message returned from server
-
 SetPanelState ( "<encode>{"panelId":"2","panelLabel":"Count of Signals","sheetId":"0","view":"visualization","viewOptions":null,"numCollect":2000,"viewOptionsMap":{},"config":{"backgroundColor":"","panelstatus":"normalized","componentName":"panel","type":"golden","opacity":100.0},"ornaments":{"tools":{"shared":{"editXAxis":{"rotate":0.0,"showAllXValues":false,"min":{"show":false},"max":{"show":false},"line":true,"values":true,"format":{"delimiter":"Default","wordWrap":false,"prepend":"","type":"Default","append":"","maxLength":10.0},"nameGap":25.0,"centerTitle":false,"fontSize":12.0,"title":{"show":true,"name":"Month"}},"chartTitle":{"fontFamily":"Open Sans","enterCustomFont":false,"fontSize":18.0,"text":"Count of Signals","fontWeight":"normal","fontColor":"#000000"},"editYAxis":{"rotate":0.0,"min":{"show":false},"max":{"show":false},"line":true,"values":true,"format":{"delimiter":"Default","wordWrap":false,"prepend":"","type":"Default","append":"","maxLength":10.0},"nameGap":25.0,"title":{"show":true,"name":"Count"}}}}},"events":{"onSingleClick":{"Unfilter":[{"disabledVisuals":["Grid","Sunburst"],"default":true,"query":"(<Frame> | UnfilterFrame(<SelectedColumn>));","options":{},"refresh":false,"disabled":false,"panel":""}]},"onBrush":{"Filter":[{"default":true,"query":"if((IsEmpty(<SelectedValues>)),(<Frame> | UnfilterFrame(<SelectedColumn>)), (<Frame> | SetFrameFilter(<SelectedColumn>==<SelectedValues>)));","options":{},"refresh":false,"disabled":false,"panel":""}]}},"comments":{},"filters":[],"order":[{"type":"CUSTOM","content":{"columnToSort":{"type":"COLUMN","content":{"table":"month","column":"PRIM_KEY_PLACEHOLDER","alias":"month","tableAlias":null}},"values":["May      ","June     ","July     ","August   ","September"]}}],"cbv":[],"lastQs":{"qsType":"FRAME","frameName":"POSTGRES_FRAME741331","frameType":"R","isDistinct":true,"overrideImplicit":false,"limit":2000,"offset":0,"queryAll":false,"selectors":[{"type":"COLUMN","content":{"table":"month","column":"PRIM_KEY_PLACEHOLDER","alias":"month","tableAlias":null}},{"type":"COLUMN","content":{"table":"Collaborate","column":"PRIM_KEY_PLACEHOLDER","alias":"Collaborate","tableAlias":null}},{"type":"COLUMN","content":{"table":"Complication","column":"PRIM_KEY_PLACEHOLDER","alias":"Complication","tableAlias":null}},{"type":"COLUMN","content":{"table":"Develop","column":"PRIM_KEY_PLACEHOLDER","alias":"Develop","tableAlias":null}},{"type":"COLUMN","content":{"table":"Hiring","column":"PRIM_KEY_PLACEHOLDER","alias":"Hiring","tableAlias":null}},{"type":"COLUMN","content":{"table":"Investment","column":"PRIM_KEY_PLACEHOLDER","alias":"Investment","tableAlias":null}},{"type":"COLUMN","content":{"table":"Policy","column":"PRIM_KEY_PLACEHOLDER","alias":"Policy","tableAlias":null}}],"withPanels":["2"]},"lastQueryStructMap":{"0":{"qsType":"FRAME","frameName":"POSTGRES_FRAME741331","frameType":"R","isDistinct":true,"overrideImplicit":false,"limit":2000,"offset":0,"queryAll":false,"selectors":[{"type":"COLUMN","content":{"table":"month","column":"PRIM_KEY_PLACEHOLDER","alias":"month","tableAlias":null}},{"type":"COLUMN","content":{"table":"Collaborate","column":"PRIM_KEY_PLACEHOLDER","alias":"Collaborate","tableAlias":null}},{"type":"COLUMN","content":{"table":"Complication","column":"PRIM_KEY_PLACEHOLDER","alias":"Complication","tableAlias":null}},{"type":"COLUMN","content":{"table":"Develop","column":"PRIM_KEY_PLACEHOLDER","alias":"Develop","tableAlias":null}},{"type":"COLUMN","content":{"table":"Hiring","column":"PRIM_KEY_PLACEHOLDER","alias":"Hiring","tableAlias":null}},{"type":"COLUMN","content":{"table":"Investment","column":"PRIM_KEY_PLACEHOLDER","alias":"Investment","tableAlias":null}},{"type":"COLUMN","content":{"table":"Policy","column":"PRIM_KEY_PLACEHOLDER","alias":"Policy","tableAlias":null}}],"withPanels":["2"]}},"lastTaskOptions":{"options":{"2":{"layout":"Line","alignment":{"tooltip":[],"label":["month"],"value":["Collaborate","Complication","Develop","Hiring","Investment","Policy"],"facet":[]},"layer":{"addYAxis":true,"addXAxis":true,"name":"Layer 0","z":2.0,"id":"0","base":true}}},"ornament":false},"lastTaskOptionsMap":{"0":{"options":{"2":{"layout":"Line","alignment":{"tooltip":[],"label":["month"],"value":["Collaborate","Complication","Develop","Hiring","Investment","Policy"],"facet":[]},"layer":{"addYAxis":true,"addXAxis":true,"name":"Layer 0","z":2.0,"id":"0","base":true}}},"ornament":false}},"lastFormatter":{"type":"TABLE","options":null},"lastFormatterMap":{"0":{"type":"TABLE","options":null}}}</encode>" ) ;
-No message returned from server
-
 AddPanel ( panel = [ "4" ] , sheet = [ "0" ] ) ;
-No message returned from server
-
 SetPanelState ( "<encode>{"panelId":"4","panelLabel":"Map of keyword count","sheetId":"0","view":"visualization","viewOptions":"{\"type\":\"standard\"}","numCollect":2000,"viewOptionsMap":{"visualization":{"type":"standard"}},"config":{"backgroundColor":"","panelstatus":"normalized","componentName":"panel","type":"golden","opacity":100.0},"ornaments":{"tools":{"shared":{"colorName":"Eleven","color":["#009A44","#86BC25","#00A3E0","#012169","#0097A9"]}}},"events":{"onSingleClick":{"Unfilter":[{"disabledVisuals":["Grid","Sunburst"],"default":true,"query":"(<Frame> | UnfilterFrame(<SelectedColumn>));","options":{},"refresh":false,"disabled":false,"panel":""}]},"onBrush":{"Filter":[{"default":true,"query":"if((IsEmpty(<SelectedValues>)),(<Frame> | UnfilterFrame(<SelectedColumn>)), (<Frame> | SetFrameFilter(<SelectedColumn>==<SelectedValues>)));","options":{},"refresh":false,"disabled":false,"panel":""}]}},"comments":{},"filters":[],"order":[],"cbv":[],"lastQs":{"qsType":"FRAME","frameName":"df","frameType":"PY","isDistinct":true,"overrideImplicit":false,"limit":2000,"offset":0,"queryAll":false,"selectors":[{"type":"COLUMN","content":{"table":"name","column":"PRIM_KEY_PLACEHOLDER","alias":"name","tableAlias":null}},{"type":"FUNCTION","content":{"alias":"Average_of_latitude","function":"Mean","distinct":false,"colCast":"","innerSelectors":[{"type":"COLUMN","content":{"table":"latitude","column":"PRIM_KEY_PLACEHOLDER","alias":"latitude","tableAlias":null}}]}},{"type":"FUNCTION","content":{"alias":"Average_of_longitude","function":"Mean","distinct":false,"colCast":"","innerSelectors":[{"type":"COLUMN","content":{"table":"longitude","column":"PRIM_KEY_PLACEHOLDER","alias":"longitude","tableAlias":null}}]}},{"type":"FUNCTION","content":{"alias":"Sum_of_keyword_count","function":"Sum","distinct":false,"colCast":"","innerSelectors":[{"type":"COLUMN","content":{"table":"keyword_count","column":"PRIM_KEY_PLACEHOLDER","alias":"keyword_count","tableAlias":null}}]}}],"groups":[{"type":"COLUMN","content":{"table":"name","column":"PRIM_KEY_PLACEHOLDER","alias":"name","tableAlias":null}}],"withPanels":["4"]},"lastQueryStructMap":{"0":{"qsType":"FRAME","frameName":"df","frameType":"PY","isDistinct":true,"overrideImplicit":false,"limit":2000,"offset":0,"queryAll":false,"selectors":[{"type":"COLUMN","content":{"table":"name","column":"PRIM_KEY_PLACEHOLDER","alias":"name","tableAlias":null}},{"type":"FUNCTION","content":{"alias":"Average_of_latitude","function":"Mean","distinct":false,"colCast":"","innerSelectors":[{"type":"COLUMN","content":{"table":"latitude","column":"PRIM_KEY_PLACEHOLDER","alias":"latitude","tableAlias":null}}]}},{"type":"FUNCTION","content":{"alias":"Average_of_longitude","function":"Mean","distinct":false,"colCast":"","innerSelectors":[{"type":"COLUMN","content":{"table":"longitude","column":"PRIM_KEY_PLACEHOLDER","alias":"longitude","tableAlias":null}}]}},{"type":"FUNCTION","content":{"alias":"Sum_of_keyword_count","function":"Sum","distinct":false,"colCast":"","innerSelectors":[{"type":"COLUMN","content":{"table":"keyword_count","column":"PRIM_KEY_PLACEHOLDER","alias":"keyword_count","tableAlias":null}}]}}],"groups":[{"type":"COLUMN","content":{"table":"name","column":"PRIM_KEY_PLACEHOLDER","alias":"name","tableAlias":null}}],"withPanels":["4"]}},"lastTaskOptions":{"options":{"4":{"layout":"Map","alignment":{"size":["Sum_of_keyword_count"],"color":[],"latitude":["Average_of_latitude"],"tooltip":[],"label":["name"],"facet":[],"longitude":["Average_of_longitude"]},"layer":{"addYAxis":true,"addXAxis":true,"name":"Layer 0","z":2.0,"id":"0","base":true}}},"ornament":false},"lastTaskOptionsMap":{"0":{"options":{"4":{"layout":"Map","alignment":{"size":["Sum_of_keyword_count"],"color":[],"latitude":["Average_of_latitude"],"tooltip":[],"label":["name"],"facet":[],"longitude":["Average_of_longitude"]},"layer":{"addYAxis":true,"addXAxis":true,"name":"Layer 0","z":2.0,"id":"0","base":true}}},"ornament":false}},"lastFormatter":{"type":"TABLE","options":null},"lastFormatterMap":{"0":{"type":"TABLE","options":null}}}</encode>" ) ;
-No message returned from server
-
 AddPanel ( panel = [ "5" ] , sheet = [ "0" ] ) ;
-No message returned from server
-
 SetPanelState ( "<encode>{"panelId":"5","panelLabel":null,"sheetId":"0","view":"dashboard-filter","viewOptions":"{\"frame\":\"df\",\"column\":\"keyword\",\"type\":\"checklist\",\"auto\":true,\"dynamic\":false,\"multiple\":true,\"searchable\":true,\"applied\":false}","numCollect":2000,"viewOptionsMap":{"dashboard-filter":{"frame":"df","column":"keyword","type":"checklist","auto":true,"dynamic":false,"multiple":true,"searchable":true,"applied":false}},"config":{"type":"golden"},"ornaments":{},"events":{"onSingleClick":{"Unfilter":[{"disabledVisuals":["Grid","Sunburst"],"default":true,"query":"(<Frame> | UnfilterFrame(<SelectedColumn>));","options":{},"refresh":false,"disabled":false,"panel":""}]},"onBrush":{"Filter":[{"default":true,"query":"if((IsEmpty(<SelectedValues>)),(<Frame> | UnfilterFrame(<SelectedColumn>)), (<Frame> | SetFrameFilter(<SelectedColumn>==<SelectedValues>)));","options":{},"refresh":false,"disabled":false,"panel":""}]}},"comments":{},"filters":[],"order":[],"cbv":[]}</encode>" ) ;
-No message returned from server
-
 AddPanel ( panel = [ "6" ] , sheet = [ "0" ] ) ;
-No message returned from server
-
 SetPanelState ( "<encode>{"panelId":"6","panelLabel":null,"sheetId":"0","view":"dashboard-filter","viewOptions":"{\"frame\":\"df\",\"column\":\"month_number\",\"type\":\"checklist\",\"auto\":true,\"dynamic\":false,\"multiple\":true,\"searchable\":true,\"applied\":false}","numCollect":2000,"viewOptionsMap":{"dashboard-filter":{"frame":"df","column":"month_number","type":"checklist","auto":true,"dynamic":false,"multiple":true,"searchable":true,"applied":false}},"config":{"type":"golden"},"ornaments":{},"events":{"onSingleClick":{"Unfilter":[{"disabledVisuals":["Grid","Sunburst"],"default":true,"query":"(<Frame> | UnfilterFrame(<SelectedColumn>));","options":{},"refresh":false,"disabled":false,"panel":""}]},"onBrush":{"Filter":[{"default":true,"query":"if((IsEmpty(<SelectedValues>)),(<Frame> | UnfilterFrame(<SelectedColumn>)), (<Frame> | SetFrameFilter(<SelectedColumn>==<SelectedValues>)));","options":{},"refresh":false,"disabled":false,"panel":""}]}},"comments":{},"filters":[],"order":[],"cbv":[]}</encode>" ) ;
-No message returned from server
-
 AddPanel ( panel = [ "7" ] , sheet = [ "0" ] ) ;
-No message returned from server
-
 SetPanelState ( "<encode>{"panelId":"7","panelLabel":null,"sheetId":"0","view":"visualization","viewOptions":"{\"type\":\"standard\"}","numCollect":2000,"viewOptionsMap":{"visualization":{"type":"standard"}},"config":{"type":"golden"},"ornaments":{},"events":{"onSingleClick":{"Unfilter":[{"disabledVisuals":["Grid","Sunburst"],"default":true,"query":"(<Frame> | UnfilterFrame(<SelectedColumn>));","options":{},"refresh":false,"disabled":false,"panel":""}]},"onBrush":{"Filter":[{"default":true,"query":"if((IsEmpty(<SelectedValues>)),(<Frame> | UnfilterFrame(<SelectedColumn>)), (<Frame> | SetFrameFilter(<SelectedColumn>==<SelectedValues>)));","options":{},"refresh":false,"disabled":false,"panel":""}]}},"comments":{},"filters":[],"order":[],"cbv":[],"lastQs":{"qsType":"FRAME","frameName":"df","frameType":"PY","isDistinct":true,"overrideImplicit":false,"limit":2000,"offset":0,"queryAll":false,"selectors":[{"type":"FUNCTION","content":{"alias":"Sum_of_keyword_count","function":"Sum","distinct":false,"colCast":"","innerSelectors":[{"type":"COLUMN","content":{"table":"keyword_count","column":"PRIM_KEY_PLACEHOLDER","alias":"keyword_count","tableAlias":null}}]}}],"withPanels":["7"]},"lastQueryStructMap":{"0":{"qsType":"FRAME","frameName":"df","frameType":"PY","isDistinct":true,"overrideImplicit":false,"limit":2000,"offset":0,"queryAll":false,"selectors":[{"type":"FUNCTION","content":{"alias":"Sum_of_keyword_count","function":"Sum","distinct":false,"colCast":"","innerSelectors":[{"type":"COLUMN","content":{"table":"keyword_count","column":"PRIM_KEY_PLACEHOLDER","alias":"keyword_count","tableAlias":null}}]}}],"withPanels":["7"]}},"lastTaskOptions":{"options":{"7":{"layout":"KPI","alignment":{"dimension":["Sum_of_keyword_count"]},"layer":{"addYAxis":true,"addXAxis":true,"name":"Layer 0","z":2.0,"id":"0","base":true}}},"ornament":false},"lastTaskOptionsMap":{"0":{"options":{"7":{"layout":"KPI","alignment":{"dimension":["Sum_of_keyword_count"]},"layer":{"addYAxis":true,"addXAxis":true,"name":"Layer 0","z":2.0,"id":"0","base":true}}},"ornament":false}},"lastFormatter":{"type":"TABLE","options":null},"lastFormatterMap":{"0":{"type":"TABLE","options":null}}}</encode>" ) ;
-No message returned from server
-
 JdbcSource ( conDetails = [ { "dbDriver" : "POSTGRES" , "hostname" : "db-postgres-prod-preprod.ckxhtnyisce2.us-east-1.rds.amazonaws.com" , "port" : "5432" , "schema" : "bridgeapp" , "database" : "dsb-foc" , "USERNAME" : "svc-dsb-readonly" , "PASSWORD" : "gM2csehYnghH" } ] ) | Query ( "<encode>select to_char(date(ds.published_date), 'Month') as month, count(o.keyword) as keyword_count
 from bridgeapp.alert_keywords as ak
 left join bridgeapp.alert_info as ai on ak.alert_id = ai.alert_id
@@ -51,8 +23,6 @@ where workflow_status >= 400
   and (o.taxonomy_root = 2 or o.taxonomy_root = 3 or o.taxonomy_root = 4)
   and ds.published_date is not null
 group by month;</encode>" ) | Import ( frame = [ CreateFrame ( frameType = [ GRID ] , override = [ true ] ) .as ( [ "POSTGRES_FRAME32932" ] ) ] ) ;
-No message returned from server
-
 JdbcSource ( conDetails = [ { "dbDriver" : "POSTGRES" , "hostname" : "db-postgres-prod-preprod.ckxhtnyisce2.us-east-1.rds.amazonaws.com" , "port" : "5432" , "schema" : "bridgeapp" , "database" : "dsb-foc" , "USERNAME" : "svc-dsb-readonly" , "PASSWORD" : "gM2csehYnghH" } ] ) | Query ( "<encode>select to_char(date(ds.published_date), 'Month') as month, count(o.keyword) as keyword_count,
 o.keyword
 from bridgeapp.alert_keywords as ak
@@ -65,56 +35,22 @@ where workflow_status >= 400
   and (o.taxonomy_root = 2 or o.taxonomy_root = 3 or o.taxonomy_root = 4)
   and ds.published_date is not null
 group by month, keyword;</encode>" ) | Import ( frame = [ CreateFrame ( frameType = [ GRID ] , override = [ true ] ) .as ( [ "POSTGRES_FRAME795779" ] ) ] ) ;
-No message returned from server
-
 POSTGRES_FRAME32932 | Convert ( "PY" ) ;
-No message returned from server
-
 POSTGRES_FRAME795779 | Convert ( "PY" ) ;
-No message returned from server
-
 Py ( "<encode>month_df = POSTGRES_FRAME32932</encode>" ) ;
-No message returned from server
-
 Py ( "<encode>keyword_df = POSTGRES_FRAME795779</encode>" ) ;
-No message returned from server
-
 Py ( "<encode>df_new = keyword_df.groupby(by='keyword').sum()['keyword_count'].nlargest(10)</encode>" ) ;
-No message returned from server
-
 Py ( "<encode>top_10 = df_new.index.tolist()</encode>" ) ;
-No message returned from server
-
 Py ( "<encode>keyword_df = pd.merge(keyword_df, month_df, on = ['month'], how = 'left')</encode>" ) ;
-No message returned from server
-
 Py ( "<encode>keyword_df['month']=keyword_df['month'].str.strip()</encode>" ) ;
-No message returned from server
-
 Py ( "<encode>keyword_df['monthly_pct'] = keyword_df['keyword_count_x'] / keyword_df['keyword_count_y'] * 100</encode>" ) ;
-No message returned from server
-
 Py ( "<encode>months = ['January', 'February', 'March', 'April','May','June','July','August','September', 'October', 'November', 'December']</encode>" ) ;
-No message returned from server
-
 Py ( "<encode>keyword_df = keyword_df.where(keyword_df['keyword'].isin(top_10)).dropna().sort_values('month', key = lambda x : pd.Categorical(x, categories=months, ordered=True))</encode>" ) ;
-No message returned from server
-
 Py ( "<encode>keyword_slim = keyword_df[['month', 'keyword', 'monthly_pct']].dropna()</encode>" ) ;
-No message returned from server
-
 Py ( "<encode>keyword_pivot = pd.pivot_table(keyword_slim, values = 'monthly_pct', index = ['month'], columns = ['keyword']).sort_values('month', key = lambda x : pd.Categorical(x, categories=months, ordered=True))</encode>" ) ;
-No message returned from server
-
 Py ( "<encode>keyword_final = keyword_pivot.reset_index()</encode>" ) ;
-No message returned from server
-
 GenerateFrameFromPyVariable ( "keyword_final" ) ;
-No message returned from server
-
 keyword_final | ReplaceColumnValue ( column = [ "Carbon_Dioxide" , "Climate" , "Climate_Change" , "Decarbonization" , "Electric_Vehicles" , "Green" , "Net_Zero" , "Solar_Energy" , "Sustainable" , "Greenhouse_Gas" ] , value = [ "null" ] , newValue = [ "0" ] ) ;
-No message returned from server
-
 JdbcSource ( conDetails = [ { "dbDriver" : "POSTGRES" , "hostname" : "db-postgres-prod-preprod.ckxhtnyisce2.us-east-1.rds.amazonaws.com" , "port" : "5432" , "schema" : "bridgeapp" , "database" : "dsb-foc" , "USERNAME" : "svc-dsb-readonly" , "PASSWORD" : "gM2csehYnghH" } ] ) | Query ( "<encode>select  to_char(date(ds.published_date), 'Month') as month, o.keyword, count(ai.title)
 from bridgeapp.alert_keywords as ak
 left join bridgeapp.alert_info as ai on ak.alert_id = ai.alert_id
@@ -127,14 +63,8 @@ where workflow_status >= 400
   and ds.published_date is not null
 group by month, o.keyword
 order by month, o.keyword;</encode>" ) | Import ( frame = [ CreateFrame ( frameType = [ GRID ] , override = [ true ] ) .as ( [ "POSTGRES_FRAME741331" ] ) ] ) ;
-No message returned from server
-
 POSTGRES_FRAME741331 | Convert ( frameType = [ R ] ) .as ( [ 'POSTGRES_FRAME741331' ] ) ;
-No message returned from server
-
 POSTGRES_FRAME741331 | Pivot ( pivotCol = [ "keyword" ] , valueCol = [ "count" ] , function = [ "" ] , maintainCols = [ "month" ] ) ;
-No message returned from server
-
 JdbcSource ( conDetails = [ { "dbDriver" : "POSTGRES" , "hostname" : "db-postgres-prod-preprod.ckxhtnyisce2.us-east-1.rds.amazonaws.com" , "port" : "5432" , "schema" : "bridgeapp" , "database" : "dsb-foc" , "USERNAME" : "svc-dsb-readonly" , "PASSWORD" : "gM2csehYnghH" } ] ) | Query ( "<encode>select to_char(date(ds.published_date), 'Month') as month, count(o.keyword) as keyword_count, o.keyword, ai.news_country
 from bridgeapp.alert_keywords as ak
 left join bridgeapp.alert_info as ai on ak.alert_id = ai.alert_id
@@ -148,52 +78,23 @@ where workflow_status >= 400
   and ai.news_country is not null
 group by month, keyword, ai.news_country
 order by month;</encode>" ) | Import ( frame = [ CreateFrame ( frameType = [ GRID ] , override = [ true ] ) .as ( [ "POSTGRES_FRAME833680" ] ) ] ) ;
-No message returned from server
-
 FileRead ( filePath = [ "data/country_lat_long (2).csv" ] , dataTypeMap = [ { "country" : "STRING" , "latitude" : "DOUBLE" , "longitude" : "DOUBLE" , "name" : "STRING" } ] , delimiter = [ "," ] , newHeaders = [ { } ] , fileName = [ "country_lat_long.csv" ] , additionalDataTypes = [ { "latitude" : "double_round2" , "longitude" : "double_round2" } ] ) | Select ( DND__country , DND__latitude , DND__longitude , DND__name ) .as ( [ country , latitude , longitude , name ] ) | Import ( frame = [ CreateFrame ( frameType = [ GRID ] , override = [ true ] ) .as ( [ "country_lat_long_csv_FRAME543720" ] ) ] ) ;
-No message returned from server
-
 Frame ( POSTGRES_FRAME833680 ) | QueryAll ( ) | Distinct ( true ) | Merge ( joins = [ ( name , inner.join , news_country ) ] , frame = [ country_lat_long_csv_FRAME543720 ] ) ;
-No message returned from server
-
 country_lat_long_csv_FRAME543720 | Convert ( "PY" ) ;
-No message returned from server
-
 Py ( "<encode>df = country_lat_long_csv_FRAME543720</encode>" ) ;
-No message returned from server
-
 Py ( "<encode>months = ['January', 'February', 'March', 'April','May','June','July','August','September','October', 'November','December']</encode>" ) ;
-No message returned from server
-
 Py ( "<encode>df['month']=df['month'].str.strip()</encode>" ) ;
-No message returned from server
-
 Py ( "<encode>df = df.sort_values('month', key = lambda x : pd.Categorical(x, categories=months, ordered=True))</encode>" ) ;
-No message returned from server
-
 Py ( "<encode>df['month_number'] = ""</encode>" ) ;
-No message returned from server
-
 Py ( "<encode>count = 0
 for month in months:
     count += 1
     print(count, month)
     value = str(count) +' ' + month
     df.loc[df['month'] == month, 'month_number'] = value</encode>" ) ;
-No message returned from server
-
 GenerateFrameFromPyVariable ( "df" ) ;
-No message returned from server
-
 if ( ( keyword_final | HasDuplicates ( month ) ) , ( ( Frame ( frame = [ keyword_final ] ) | Select ( month , Average ( Carbon_Dioxide ) , Average ( Climate ) , Average ( Climate_Change ) , Average ( Decarbonization ) , Average ( Electric_Vehicles ) , Average ( Green ) , Average ( Net_Zero ) , Average ( Solar_Energy ) , Average ( Sustainable ) ) .as ( [ month , Average_of_Carbon_Dioxide , Average_of_Climate , Average_of_Climate_Change , Average_of_Decarbonization , Average_of_Electric_Vehicles , Average_of_Green , Average_of_Net_Zero , Average_of_Solar_Energy , Average_of_Sustainable ] ) | Group ( month ) | With ( Panel ( 1 ) ) | Format ( type = [ 'table' ] ) | TaskOptions ( { "1" : { "layout" : "Area" , "alignment" : { "label" : [ "month" ] , "value" : [ "Average_of_Carbon_Dioxide" , "Average_of_Climate" , "Average_of_Climate_Change" , "Average_of_Decarbonization" , "Average_of_Electric_Vehicles" , "Average_of_Green" , "Average_of_Net_Zero" , "Average_of_Solar_Energy" , "Average_of_Sustainable" ] , "tooltip" : [ ] , "facet" : [ ] } , "layer" : { "id" : "0" , "name" : "Layer 0" , "addYAxis" : true , "addXAxis" : true , "z" : 2 , "base" : true } } } ) | Collect ( 2000 ) ) ) , ( ( Frame ( frame = [ keyword_final ] ) | Select ( month , Carbon_Dioxide , Climate , Climate_Change , Decarbonization , Electric_Vehicles , Green , Net_Zero , Solar_Energy , Sustainable ) .as ( [ month , Carbon_Dioxide , Climate , Climate_Change , Decarbonization , Electric_Vehicles , Green , Net_Zero , Solar_Energy , Sustainable ] ) | With ( Panel ( 1 ) ) | Format ( type = [ 'table' ] ) | TaskOptions ( { "1" : { "layout" : "Area" , "alignment" : { "label" : [ "month" ] , "value" : [ "Carbon_Dioxide" , "Climate" , "Climate_Change" , "Decarbonization" , "Electric_Vehicles" , "Green" , "Net_Zero" , "Solar_Energy" , "Sustainable" ] , "tooltip" : [ ] , "facet" : [ ] } , "layer" : { "id" : "0" , "name" : "Layer 0" , "addYAxis" : true , "addXAxis" : true , "z" : 2 , "base" : true } } } ) | Collect ( 2000 ) ) ) ) ;
-No message returned from server
-
 if ( ( POSTGRES_FRAME741331 | HasDuplicates ( month ) ) , ( ( Frame ( frame = [ POSTGRES_FRAME741331 ] ) | Select ( month , Average ( Collaborate ) , Average ( Complication ) , Average ( Develop ) , Average ( Hiring ) , Average ( Investment ) , Average ( Policy ) ) .as ( [ month , Average_of_Collaborate , Average_of_Complication , Average_of_Develop , Average_of_Hiring , Average_of_Investment , Average_of_Policy ] ) | Group ( month ) | With ( Panel ( 2 ) ) | Format ( type = [ 'table' ] ) | TaskOptions ( { "2" : { "layout" : "Line" , "alignment" : { "label" : [ "month" ] , "value" : [ "Average_of_Collaborate" , "Average_of_Complication" , "Average_of_Develop" , "Average_of_Hiring" , "Average_of_Investment" , "Average_of_Policy" ] , "tooltip" : [ ] , "facet" : [ ] } , "layer" : { "id" : "0" , "name" : "Layer 0" , "addYAxis" : true , "addXAxis" : true , "z" : 2 , "base" : true } } } ) | Collect ( 2000 ) ) ) , ( ( Frame ( frame = [ POSTGRES_FRAME741331 ] ) | Select ( month , Collaborate , Complication , Develop , Hiring , Investment , Policy ) .as ( [ month , Collaborate , Complication , Develop , Hiring , Investment , Policy ] ) | With ( Panel ( 2 ) ) | Format ( type = [ 'table' ] ) | TaskOptions ( { "2" : { "layout" : "Line" , "alignment" : { "label" : [ "month" ] , "value" : [ "Collaborate" , "Complication" , "Develop" , "Hiring" , "Investment" , "Policy" ] , "tooltip" : [ ] , "facet" : [ ] } , "layer" : { "id" : "0" , "name" : "Layer 0" , "addYAxis" : true , "addXAxis" : true , "z" : 2 , "base" : true } } } ) | Collect ( 2000 ) ) ) ) ;
-No message returned from server
-
 if ( ( df | HasDuplicates ( name ) ) , ( ( Frame ( frame = [ df ] ) | Select ( name , Average ( latitude ) , Average ( longitude ) , Sum ( keyword_count ) ) .as ( [ name , Average_of_latitude , Average_of_longitude , Sum_of_keyword_count ] ) | Group ( name ) | With ( Panel ( 4 ) ) | Format ( type = [ 'table' ] ) | TaskOptions ( { "4" : { "layout" : "Map" , "alignment" : { "label" : [ "name" ] , "latitude" : [ "Average_of_latitude" ] , "longitude" : [ "Average_of_longitude" ] , "size" : [ "Sum_of_keyword_count" ] , "color" : [ ] , "tooltip" : [ ] , "facet" : [ ] } , "layer" : { "id" : "0" , "name" : "Layer 0" , "addYAxis" : true , "addXAxis" : true , "z" : 2 , "base" : true } } } ) | Collect ( 2000 ) ) ) , ( ( Frame ( frame = [ df ] ) | Select ( name , latitude , longitude , keyword_count ) .as ( [ name , latitude , longitude , keyword_count ] ) | With ( Panel ( 4 ) ) | Format ( type = [ 'table' ] ) | TaskOptions ( { "4" : { "layout" : "Map" , "alignment" : { "label" : [ "name" ] , "latitude" : [ "latitude" ] , "longitude" : [ "longitude" ] , "size" : [ "keyword_count" ] , "color" : [ ] , "tooltip" : [ ] , "facet" : [ ] } , "layer" : { "id" : "0" , "name" : "Layer 0" , "addYAxis" : true , "addXAxis" : true , "z" : 2 , "base" : true } } } ) | Collect ( 2000 ) ) ) ) ;
-No message returned from server
-
 ifError ( ( Frame ( frame = [ df ] ) | Select ( Sum ( keyword_count ) ) .as ( [ Sum_of_keyword_count ] ) | With ( Panel ( 7 ) ) | Format ( type = [ 'table' ] ) | TaskOptions ( { "7" : { "layout" : "KPI" , "alignment" : { "dimension" : [ "Sum_of_keyword_count" ] } , "layer" : { "addYAxis" : true , "addXAxis" : true , "name" : "Layer 0" , "z" : 2 , "id" : "0" , "base" : true } } } ) | Collect ( 2000 ) ) , ( true ) ) ;
-No message returned from server
-
+META | SetInsightConfig({"panels":{"1":{"config":{"type":"golden","backgroundColor":"","opacity":100}},"2":{"config":{"type":"golden","backgroundColor":"","opacity":100}},"4":{"config":{"type":"golden","backgroundColor":"","opacity":100}},"5":{"config":{"type":"golden","backgroundColor":"","opacity":100}},"6":{"config":{"type":"golden","backgroundColor":"","opacity":100}},"7":{"config":{"type":"golden","backgroundColor":"","opacity":100}}},"sheets":{"0":{"order":0,"golden":{"content":[{"type":"row","content":[{"type":"column","width":52.84090909090909,"content":[{"type":"stack","activeItemIndex":0,"height":50,"content":[{"type":"component","componentName":"panel","componentState":{"panelId":"2"}}]},{"type":"stack","activeItemIndex":0,"width":20.000000000000007,"height":50,"content":[{"type":"component","componentName":"panel","componentState":{"panelId":"1"}}]}]},{"type":"column","width":47.15909090909091,"content":[{"type":"row","height":36.92307692307693,"content":[{"type":"stack","activeItemIndex":0,"width":23.595505617977526,"height":50,"content":[{"type":"component","componentName":"panel","componentState":{"panelId":"5"}}]},{"type":"stack","activeItemIndex":0,"width":21.33059228015454,"content":[{"type":"component","componentName":"panel","componentState":{"panelId":"6"}}]},{"type":"stack","activeItemIndex":0,"width":55.07390210186794,"content":[{"type":"component","componentName":"panel","componentState":{"panelId":"7"}}]}]},{"type":"stack","activeItemIndex":0,"height":63.07692307692307,"content":[{"type":"component","componentName":"panel","componentState":{"panelId":"4"}}]}]}]}]}}},"sheet":"0"});
